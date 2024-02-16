@@ -497,6 +497,11 @@ nav a:hover {
     .section-content {
         flex-direction: column-reverse; /* Inverte a ordem dos elementos na seção */
     }
+
+    /* Ajuste a ordem dos depoimentos */
+    .testimonial-container {
+        flex-direction: column; /* Empilha os depoimentos verticalmente */
+    }
 }
 
 /* Estilos para telas pequenas */
@@ -534,6 +539,11 @@ nav a:hover {
     /* Reorganize a ordem da imagem e do texto para seções com imagens e texto */
     .section-content {
         flex-direction: column-reverse; /* Inverte a ordem dos elementos na seção */
+    }
+
+    /* Ajuste a ordem dos depoimentos */
+    .testimonial-container {
+        flex-direction: column; /* Empilha os depoimentos verticalmente */
     }
 }
 
@@ -587,13 +597,38 @@ nav a:hover {
         width: 100%; /* Para ocupar toda a largura em telas menores */
     }
 }
+/* Estilos padrão para telas maiores */
+.service-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+/* Estilos para telas médias */
+@media screen and (max-width: 768px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .service {
+        width: 100%;
+        margin-bottom: 20px; /* Adiciona espaço entre os serviços */
+    }
+}
 
-/* Restante do seu estilo para a seção de contato */
+/* Estilos para telas pequenas */
+@media screen and (max-width: 520px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .service {
+        width: 100%;
+        margin-bottom: 20px; /* Adiciona espaço entre os serviços */
+    }
+}
 
-/* Adicione quantas media queries forem necessárias para adaptar a fonte a diferentes tamanhos de tela */
 
         
     </style>
